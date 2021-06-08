@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="fruit">
+    <button onclick="monthFruit()">click</button>
+    <b id="gia"></b>
+    <script>
+        function monthFruit(){
+            let fruit = document.getElementById('fruit').value;
+            switch (fruit) {
+                case 'Ổi':
+                case 'Dưa hấu':
+                    gia = 20000;
+                    break;
+                case 'Táo':
+                case 'Xoài':
+                    gia = 30000;   
+                    break;   
+                case 'Cam':
+                case 'Chôm chôm':
+                    gia = 40000;   
+                    break;
+                case 'Măng cụt':
+                    gia = 50000;   
+                    break;
+
+            }
+            document.getElementById('gia').innerHTML = 'Giá ' + fruit + ' là '+ gia + ' VND'
+        }
+    </script>
+</body>
+</html>
